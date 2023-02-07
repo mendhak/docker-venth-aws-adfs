@@ -9,3 +9,4 @@ How to build. Gets the latest release version from Github and build Dockerfile f
     export version=$(curl -s "https://api.github.com/repos/venth/aws-adfs/releases/latest" | jq -r '.tag_name' | sed 's/v//')
     docker build --build-arg version=${version} -t mendhak/aws-adfs:${version} .
     docker push mendhak/aws-adfs:${version} 
+    docker push mendhak/aws-adfs:latest
