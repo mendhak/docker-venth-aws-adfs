@@ -2,6 +2,8 @@ This image wraps the [venth/aws-adfs](https://github.com/venth/aws-adfs) pip pac
 
 The Docker image is published at [mendhak/aws-adfs](https://hub.docker.com/r/mendhak/aws-adfs). 
 
+The Github repo is at [mendhak/docker-venth-aws-adfs](https://github.com/mendhak/docker-venth-aws-adfs)
+
 Example usage
 
     docker run -it --rm mendhak/aws-adfs login --adfs-host=myadfs.example.com --printenv --region eu-west-1
