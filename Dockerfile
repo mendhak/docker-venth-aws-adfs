@@ -7,6 +7,7 @@ RUN adduser -D worker
 USER worker
 WORKDIR /home/worker
 
-RUN pip install --user aws-adfs==2.6.3
+ARG version
+RUN pip install --user aws-adfs==${version}
 
 ENTRYPOINT ["/home/worker/.local/bin/aws-adfs"]
